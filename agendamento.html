@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página principal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <nav class="navbar bg-body-tertiary navbar-expand-lg bg-primary" data-bs-theme="dark" style="padding-left: 5%;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="./images/icons8-logotipo-48.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        Clínica da Mirella
+      </a>
+    </div>
+    <div class="container-fluid" style="margin-left: 40%;">
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Atendimento
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html">Atendimento</a></li>
+              <li><a class="dropdown-item" href="agendamento.html">Agendamento</a></li>
+              <li><a class="dropdown-item" href="index.html">Fila de espera</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Cadastro
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="cadastro_paciente.html">Paciente</a></li>
+              <li><a class="dropdown-item" href="anamnese.html">Anamnese</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Configuração
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html">Fila de espera</a></li>
+              <li><a class="dropdown-item" href="documentos.html">Documentos</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="container">
+    <body>
+      <div id='calendar'></div>
+
+      <!-- Modal visualizar -->
+<div class="modal fade" id="visualizarModal" tabindex="-1" aria-labelledby="visualizarModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="visualizarModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </body>
+  </section>
+  
+  <script src="./js/custom.js"></script> 
+  <script src='./js/index.global.min.js'></script>
+  <script src="./js/core/locales-all.global.min.js"></script>
+  <script src="./js/bootstrap5/index.global.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+</body>
+</html>

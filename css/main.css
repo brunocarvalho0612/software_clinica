@@ -1,0 +1,38 @@
+body {
+  background-color: rgb(233, 236, 239); 
+}
+
+.container-pacients {
+  display: flex;
+  width: 50%;
+}
+
+.pacients {
+  display: flex;
+  margin-top: 16px;
+}
+
+.card {
+  max-height: 260px;
+  margin-top: 8px;
+}
+
+.btn {
+  height: 50px;
+  margin-bottom: 12px;
+}
+
+.pacients-head {
+  display: flex;
+  align-items: center;
+} 
+
+.table {
+  margin: 0 8px 0 0;
+}
+
+#calendar {
+  max-height: 740px;
+  height: 100%;
+  margin: 0 auto;
+}

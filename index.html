@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página principal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <nav class="navbar bg-body-tertiary navbar-expand-lg bg-primary" data-bs-theme="dark" style="padding-left: 5%;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./images/icons8-logotipo-48.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        Clínica da Mirella
+      </a>
+    </div>
+    <div class="container-fluid" style="margin-left: 40%;">
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Atendimento
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html">Atendimento</a></li>
+              <li><a class="dropdown-item" href="agendamento.html">Agendamento</a></li>
+              <li><a class="dropdown-item" href="index.html">Fila de espera</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Cadastro
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="cadastro_paciente.html">Paciente</a></li>
+              <li><a class="dropdown-item" href="anamnese.html">Anamnese</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Configuração
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html">Fila de espera</a></li>
+              <li><a class="dropdown-item" href="documentos.html">Documentos</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="container" style="display: flex;">
+    <div class="row col-12">
+      <div class="col-3">
+        <div class="card">
+          <div class="card-body">
+            <img class="btn btn-primary" src="./images/icons8-informações-96.png" alt="">
+            <h5 class="card-title">Informações</h5>
+            <p class="card-text">Usuário: Bruno</p>
+            <p class="card-text">Clínica: Clínica Mirella</p>            
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card">
+          <div class="card-body">
+            <img src="./images/icons8-selecionado-96.png" class="btn btn-warning"></img>
+            <h5 class="card-title">Orçamentos</h5>
+            <p class="card-text">Orçamentos realizados: 6</p>
+            <p class="card-text">Orçamentos contratados: 4</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card">
+          <div class="card-body">
+            <img class="btn btn-success" src="./images/icons8-saco-de-dinheiro-96.png" alt="">
+            <h5 class="card-title">Contas Recebidas</h5>
+            <p class="card-text">Quantidade: 4</p>
+            <p class="card-text">Valor total: R$ 1.500,00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card">
+          <div class="card-body">
+            <img class="btn btn-danger btn-first" src="./images/icons8-preço-baixo-96.png"alt="">
+            <h5 class="card-title">Contas Pagas</h5>
+            <p class="card-text">Quantidade: 2</p>
+            <p class="card-text">Valor: R$ 500,00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <section class=" container pacients">
+    <div class="container-pacients">
+      <table class=" table">
+        <thead>
+          <tr>
+            <th>Pacientes em espera</th>
+            <th></th>
+            <th></th>
+            <th>
+              <a style="height: 36px; margin-bottom: 0;" class="btn btn-primary" href="cadastro_paciente.html">Adicionar +</a>
+            </th>
+          </tr>
+        </thead>
+        <thead>
+          <tr>
+            <th scope="col">Paciente</th>
+            <th scope="col">Profissional</th>
+            <th scope="col">Chegada</th>
+            <th scope="col">Tempo de espera</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Nome do paciente</th>
+            <td>Nome do dentista</td>
+            <td>16:37</td>
+            <td>00:02:10</td>
+          </tr>
+          <tr>
+            <th scope="row">Nome do paciente</th>
+            <td>Nome do dentista</td>
+            <td>16:37</td>
+            <td>00:02:10</td>
+          </tr>
+          <tr>
+            <th scope="row">Nome do paciente</th>
+            <td>Nome do dentista</td>
+            <td>16:37</td>
+            <td>00:02:10</td>
+          </tr>
+        </tbody>
+      </table> 
+    </div>
+    <div class="container-pacients">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Pacientes em atendimento</th>
+            <th></th>
+            <th></th>
+            <th>
+              <a style="height: 36px; margin-bottom: 0; color: transparent;" class="btn" href="#">Adicionar +</a>
+            </th>
+          </tr>
+        </thead>
+        <thead>
+          <tr>
+            <th scope="col">Paciente</th>
+            <th scope="col">Profissional</th>
+            <th scope="col">Chegada</th>
+            <th scope="col">Tempo de espera</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Nome do paciente</th>
+            <td>Nome do dentista</td>
+            <td>16:37</td>
+            <td>00:02:10</td>
+          </tr>
+          <tr>
+            <th scope="row">Nome do paciente</th>
+            <td>Nome do dentista</td>
+            <td>16:37</td>
+            <td>00:02:10</td>
+          </tr>
+          <tr>
+            <th scope="row">Nome do paciente</th>
+            <td>Nome do dentista</td>
+            <td>16:37</td>
+            <td>00:02:10</td>
+          </tr>
+        </tbody>
+      </table> 
+    </div>
+  </section>
+  <section style="margin-top: 3%;" class="container">
+    <div class="form-floating mb-3">
+      <input type="search" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Procurar paciente</label>
+    </div>
+    <div class="dropdown">
+      <a class="btn btn-success dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Criar paciente
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="cadastro_paciente.html">Criar paciente</a></li>
+      </ul>
+    </div>
+
+  </section>
+  
+  <script src="./scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
